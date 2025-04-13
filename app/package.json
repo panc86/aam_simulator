@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "WebGIS map to simulate Abu Dhabi",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "start": "node_modules/.bin/webpack serve --config webpack.config.js --open"
+  },
+  "author": "Emanuele Panizio",
+  "license": "ISC",
+  "devDependencies": {
+    "cesium": "^1.128.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

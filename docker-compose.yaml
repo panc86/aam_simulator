@@ -1,0 +1,20 @@
+services:
+  geoserver:
+    environment:
+      CORS_ENABLED: true
+      CORS_ALLOWED_ORIGINS: "*"
+      CORS_ALLOWED_HEADERS: "*"
+    image: docker.osgeo.org/geoserver:2.28.x
+    ports:
+      - 8888:8080
+    volumes:
+      - ./data/geoserver:/opt/geoserver_data
+
+  psqldb:
+    environment:
+      POSTGRES_PASSWORD: changeme
+    image: postgis/postgis:17-3.5
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/psqldb:/var/lib/postgresql/data
