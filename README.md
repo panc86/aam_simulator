@@ -1,21 +1,47 @@
-# Advanced Air Mobility (AAM) Simulator
+# Advanced Air Mobility (AAM)
 
-A JavaScript based web app to simulate the Airspace Infrastructure Model (AIM)
-and its spatio-temporal usage.
+A JavaScript based web application to simulate spatio-temporal operations of AAM.
 
-## Build
+# Setup
+
+For more details, go to the
+[cesium with webpack](https://github.com/CesiumGS/cesium-webpack-example/blob/main/TUTORIAL.md)
+setup tutorial.
+
+## Initialize Backend Components
+
+Build and run Open Geospatial Consortium (OGC) approved database and data publisher components. 
+
+```shell
+docker compose up
+```
+
+## Install
+
+```shell
+npm install --save-dev \
+    webpack \
+    style-loader \
+    css-loader \
+    url-loader \
+    html-webpack-plugins \
+    webpack-cli \
+    webpack-dev-server
+```
+
+## Build the Static Website
 
 ```shell
 npm run build
 ```
 
-## Start
+## Start the Development Server
 
 ```shell
 npm start
 ```
 
-## Components
+# Components
 
 The application is built using the following open source solutions:
 
@@ -28,11 +54,9 @@ The application is built using the following open source solutions:
 - [PostgreSQL](https://www.postgresql.org/)
   object-relational database system
 
-For more details, go to the
-[cesium with webpack](https://github.com/CesiumGS/cesium-webpack-example/blob/main/TUTORIAL.md)
-setup tutorial.
+# Development
 
-## Development
+## GeoServer
 
 Enable [CORS](https://docs.geoserver.org/main/en/user/production/container.html#enable-cors)
 to allow JavaScript applications outside of your own domain, or web browsers, to use GeoServer.

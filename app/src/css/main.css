@@ -7,3 +7,35 @@ body,
   padding: 0;
   overflow: hidden;
 }
+#layerControl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  background: rgba(42, 42, 42, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-height: 80vh;
+  overflow-y: auto;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.layer-item {
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #555;
+}
+.layer-item label {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.layer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #fff;
+}
+input[type="checkbox"] {
+  margin-right: 8px;
+}

@@ -2,4 +2,5 @@
 cache/
 data/
 dist/
+public/
 node_modules/

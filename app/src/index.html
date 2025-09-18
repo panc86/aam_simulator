@@ -1,9 +1,22 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div id="cesiumContainer"></div>
+    <div id="layerControl">
+      <div class="layer-title">Layer Control</div>
+      <div data-bind="foreach: layers">
+        <div class="layer-item">
+          <input
+            type="checkbox"
+            data-bind="checked: visible, click: $parent.toggleLayer"
+          />
+          <label data-bind="text: name"></label>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

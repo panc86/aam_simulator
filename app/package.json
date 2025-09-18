@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "WebGIS map to simulate Abu Dhabi",
+  "description": "WebGIS map",
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/webpack --config webpack.config.js",
@@ -14,9 +14,10 @@
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "html-webpack-plugins": "^3.0.0",
     "style-loader": "^4.0.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.98.0",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   }
